@@ -9,15 +9,13 @@ const FileSync = require('lowdb/adapters/FileSync', {
     deserialize: (data) => JSON.parse(decrypt(data))
 });
 
-//запрос создания счета
 router.put("/", upload.none(), function(request, response) {
-    //получение названия счёта
     const {name} = request.body;
-    const db = low(new FileSync('db.json'));// получение БД
-    let user = db.get("users").find({id: request.session.id});// поиск авторизованного пользователя
-    let userValue = user.value();// получение значения авторизованного пользователя
+    const db = low(new FileSync('db.json'));
+    let user = db.get("users").find({id: request.session.id});
+    let userValue = user.value();
     if(!userValue){
-        response.json({success: false, error: "Пользователь не авторизован"});// отправка ответа с данными
+        response.json({success: false, error: "Пользователь не авторизован"});
         return;
     }
 
@@ -27,30 +25,28 @@ router.put("/", upload.none(), function(request, response) {
         return;
     }
     
-    let creatingAccount = {name, user_id:userValue.id, id: uniqid()};//создаваемый аккаунт
-    db.get("accounts").push(creatingAccount).write();//добавление созданного аккаунта к уже существующим и запись в БД
-    response.json({success: true, account: creatingAccount});// отправка ответа с данными
+    let creatingAccount = {name, user_id:userValue.id, id: uniqid()};
+    db.get("accounts").push(creatingAccount).write();
+    response.json({success: true, account: creatingAccount});
 });
 
-//запрос изменения счета
 router.delete("/", upload.none(), function(request, response) {
-    const db = low(new FileSync('db.json'));// получение БД
-    let accounts = db.get("accounts");// получение списка счетов
-    let transactions = db.get("transactions");// получение списка счетов
-    let removingAccount = accounts.find({id: request.body.id}).value();// нахождение нужного удаляемого счёта
-    if(removingAccount){// если удаляемый аккаунт существует
-        accounts.remove({id: request.body.id}).write();// удалить и перезаписать аккаунт
-        transactions.remove({account_id: request.body.id}).write(); // удалить связанные транзакции и перезаписать
-        response.json({success: true});// отправка ответа успешности
-    }else{// если аккаунта нету
-        response.json({success: false});// отправка ответа неуспешности
+    const db = low(new FileSync('db.json'));
+    let accounts = db.get("accounts");
+    let transactions = db.get("transactions");
+    let removingAccount = accounts.find({id: request.body.id}).value();
+    if(removingAccount){
+        accounts.remove({id: request.body.id}).write();
+        transactions.remove({account_id: request.body.id}).write(); 
+        response.json({success: true});
+    }else{
+        response.json({success: false});
     }
 });
 
-//запрос получения списка счетов
 router.get("/:id?", upload.none(), function(request, response) {
     const db = low(new FileSync('db.json'));
-    let { id } = request.session; // получение id пользователя из запроса
+    let { id } = request.session;
 
     let user = db.get("users").find({id});
     let userValue = user.value();
