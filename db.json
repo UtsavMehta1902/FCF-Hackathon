@@ -25,10 +25,23 @@
       "id": "42mwlci1wvqlj9nlo55"
     },
     {
+<<<<<<< HEAD
       "name": "asdasdasd",
       "email": "asd@f",
       "password": "1",
       "id": "212nk68lj9pd4he"
+=======
+      "name": "if",
+      "email": "else@gmail.com",
+      "password": "if",
+      "id": "42mwlci8ctlj9prfx0"
+    },
+    {
+      "name": "utsav",
+      "email": "utsavmehta2002@yahoo.com",
+      "password": "1",
+      "id": "42mwlcib4tlj9qefnr"
+>>>>>>> 7f76c02 (added accounts to home page.)
     }
   ],
   "accounts": [
@@ -68,9 +81,40 @@
       "id": "42mwlci227clj9nr18n"
     },
     {
+<<<<<<< HEAD
       "name": "account1",
       "user_id": "212nk68lj9pd4he",
       "id": "212nkuolj9pjdaj"
+=======
+      "name": "dfdf",
+      "user_id": "42mwlci8ctlj9prfx0",
+      "id": "42mwlci928lj9proio"
+    },
+    {
+      "name": "dfddfd",
+      "user_id": "42mwlci8ctlj9prfx0",
+      "id": "42mwlci93elj9prsf8"
+    },
+    {
+      "name": "sdsd",
+      "user_id": "42mwlci8ctlj9prfx0",
+      "id": "42mwlci93tlj9ptnu9"
+    },
+    {
+      "name": "df",
+      "user_id": "42mwlci8ctlj9prfx0",
+      "id": "42mwlciazclj9qbuvk"
+    },
+    {
+      "name": "icici",
+      "user_id": "42mwlcib4tlj9qefnr",
+      "id": "42mwlcibd3lj9qen5o"
+    },
+    {
+      "name": "axis",
+      "user_id": "42mwlcib4tlj9qefnr",
+      "id": "42mwlcibgqlj9qffer"
+>>>>>>> 7f76c02 (added accounts to home page.)
     }
   ],
   "transactions": [
@@ -181,6 +225,42 @@
       "account_id": "42mwlci227clj9nr18n",
       "user_id": "42mwlci1wvqlj9nlo55",
       "created_at": "2023-06-24T07:06:59.020Z"
+    },
+    {
+      "id": "42mwlci84slj9piwk5",
+      "type": "income",
+      "name": "bank",
+      "sum": 23,
+      "account_id": "42mwlci227clj9nr18n",
+      "user_id": "42mwlci1wvqlj9nlo55",
+      "created_at": "2023-06-24T07:56:18.388Z"
+    },
+    {
+      "id": "42mwlci98slj9q8fqr",
+      "type": "income",
+      "name": "bank",
+      "sum": 7,
+      "account_id": "42mwlci928lj9proio",
+      "user_id": "42mwlci8ctlj9prfx0",
+      "created_at": "2023-06-24T08:16:09.650Z"
+    },
+    {
+      "id": "42mwlcibdflj9qf8ze",
+      "type": "income",
+      "name": "pani",
+      "sum": 20,
+      "account_id": "42mwlcibd3lj9qen5o",
+      "user_id": "42mwlcib4tlj9qefnr",
+      "created_at": "2023-06-24T08:21:27.481Z"
+    },
+    {
+      "id": "42mwlcibgxlj9qfnwz",
+      "type": "expense",
+      "name": "pani",
+      "sum": 20,
+      "account_id": "42mwlcibgqlj9qffer",
+      "user_id": "42mwlcib4tlj9qefnr",
+      "created_at": "2023-06-24T08:21:46.834Z"
     }
   ]
 }
