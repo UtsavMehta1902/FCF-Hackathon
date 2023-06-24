@@ -80,7 +80,7 @@ router.put("/edit", upload.none(), function(request, response) {
                 transaction.assign({
                     type: type.toLowerCase(),
                     name,
-                    sum,
+                    sum: +sum,
                     account_id,
                     created_at: new Date().toISOString()
                 }).write();

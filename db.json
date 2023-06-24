@@ -7,40 +7,10 @@
       "id": "1"
     },
     {
-      "name": "a",
-      "email": "a@a.a",
-      "password": "a",
-      "id": "xc34kj4l6lllsbe"
-    },
-    {
-      "name": "test",
-      "email": "test@test.test",
-      "password": "test",
-      "id": "xc34glkl6lm50p2"
-    },
-    {
-      "name": "icnoem",
-      "email": "utsavmehta192002@gmail.com",
-      "password": "x",
-      "id": "42mwlci1wvqlj9nlo55"
-    },
-    {
-      "name": "asdasdasd",
+      "name": "aaa",
       "email": "asd@f",
       "password": "1",
-      "id": "212nk68lj9pd4he"
-=======
-      "name": "if",
-      "email": "else@gmail.com",
-      "password": "if",
-      "id": "42mwlci8ctlj9prfx0"
-    },
-    {
-      "name": "utsav",
-      "email": "utsavmehta2002@yahoo.com",
-      "password": "1",
-      "id": "42mwlcib4tlj9qefnr"
->>>>>>> 7f76c02 (added accounts to home page.)
+      "id": "212nue5lj9we3ic"
     }
   ],
   "accounts": [
@@ -60,60 +30,9 @@
       "id": "3"
     },
     {
-      "name": "vb",
-      "user_id": "xc34kj4l6lllsbe",
-      "id": "xc34cwsl6llmvi1"
-    },
-    {
-      "name": "iop",
-      "user_id": "xc34kj4l6lllsbe",
-      "id": "xc34msol6llxn7i"
-    },
-    {
-      "name": "chase",
-      "user_id": "xc34glkl6lm50p2",
-      "id": "xc34lccl6lm59as"
-    },
-    {
-      "name": "utsav",
-      "user_id": "42mwlci1wvqlj9nlo55",
-      "id": "42mwlci227clj9nr18n"
-    },
-    {
-<<<<<<< HEAD
-      "name": "account1",
-      "user_id": "212nk68lj9pd4he",
-      "id": "212nkuolj9pjdaj"
-=======
-      "name": "dfdf",
-      "user_id": "42mwlci8ctlj9prfx0",
-      "id": "42mwlci928lj9proio"
-    },
-    {
-      "name": "dfddfd",
-      "user_id": "42mwlci8ctlj9prfx0",
-      "id": "42mwlci93elj9prsf8"
-    },
-    {
-      "name": "sdsd",
-      "user_id": "42mwlci8ctlj9prfx0",
-      "id": "42mwlci93tlj9ptnu9"
-    },
-    {
-      "name": "df",
-      "user_id": "42mwlci8ctlj9prfx0",
-      "id": "42mwlciazclj9qbuvk"
-    },
-    {
-      "name": "icici",
-      "user_id": "42mwlcib4tlj9qefnr",
-      "id": "42mwlcibd3lj9qen5o"
-    },
-    {
-      "name": "axis",
-      "user_id": "42mwlcib4tlj9qefnr",
-      "id": "42mwlcibgqlj9qffer"
->>>>>>> 7f76c02 (added accounts to home page.)
+      "name": "aa",
+      "user_id": "212nue5lj9we3ic",
+      "id": "212nue5lj9wek2z"
     }
   ],
   "transactions": [
@@ -253,13 +172,40 @@
       "user_id": "1"
     },
     {
-      "id": "212nq1flj9tm1nd",
+      "id": "212nue5lj9whi04",
       "type": "expense",
-      "name": "pani",
-      "sum": 20,
-      "account_id": "42mwlcibgqlj9qffer",
-      "user_id": "42mwlcib4tlj9qefnr",
-      "created_at": "2023-06-24T08:21:46.834Z"
+      "name": "jee99",
+      "sum": "1000",
+      "account_id": "212nue5lj9wek2z",
+      "user_id": "212nue5lj9we3ic",
+      "created_at": "2023-06-24T11:12:16.952Z"
+    },
+    {
+      "id": "212nue5lj9whpys",
+      "type": "income",
+      "name": "jhghjgh",
+      "sum": 90000,
+      "account_id": "212nue5lj9wek2z",
+      "user_id": "212nue5lj9we3ic",
+      "created_at": "2023-06-24T11:23:05.054Z"
+    },
+    {
+      "id": "212nue5lj9whz9l",
+      "type": "income",
+      "name": "jhghjghjg",
+      "sum": 900,
+      "account_id": "212nue5lj9wek2z",
+      "user_id": "212nue5lj9we3ic",
+      "created_at": "2023-06-24T11:22:52.014Z"
+    },
+    {
+      "id": "212nue5lj9wjuob",
+      "type": "income",
+      "name": "jee99",
+      "sum": "1",
+      "account_id": "212nue5lj9wek2z",
+      "user_id": "212nue5lj9we3ic",
+      "created_at": "2023-06-24T11:13:38.004Z"
     }
   ]
 }
