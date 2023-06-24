@@ -5088,3 +5088,15 @@ table.text-center th {
     white-space: normal !important;
   }
 }
+
+.delete-account-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .remove-account {
+    margin-left: 10px;
+    margin-right: 0;
+  }
+  
