@@ -40,18 +40,17 @@
         </header>
         <aside class="main-sidebar">
             <section class="sidebar">
-
-                <div class="user-panel">
-                    <div class="pull-left image">
-                        <img src="vendor/adminlte/img/robot.png" width="160" class="img-circle" alt="User Image">
+                <a href="">
+                    <div class="user-panel">
+                        <div class="pull-left image">
+                            <img src="vendor/adminlte/img/robot.png" width="160" class="img-circle" alt="User Image">
+                        </div>
+                        <div class="pull-left info">
+                            <p class="user-name">Test User</p>
+                        </div>
                     </div>
-                    <div class="pull-left info">
-                        <p class="user-name">Alexander Pierce</p>
-                        <a href="#">
-                            <i class="fa fa-circle text-success"></i> Online
-                        </a>
-                    </div>
-                </div>
+                </a>
+               
 
                 <div class="transactions-panel">
                     <button class="btn btn-success btn-block create-income-button">
@@ -63,6 +62,17 @@
                         Expense
                     </button>
                 </div>
+                <ul class="sidebar-menu accounts-panel" data-widget="tree">
+                    <li class="header">
+                        Accounts
+                        <div class="pull-right">
+                            <span class="create-account label label-success">
+                                <span class="fa fa-plus"></span>
+                                New Account
+                            </span>
+                        </div>
+                    </li>
+                </ul>
                 <ul class="sidebar-menu" data-widget="tree">
                     <li class="header">
                         Authorization
@@ -83,24 +93,13 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="sidebar-menu accounts-panel" data-widget="tree">
-                    <li class="header">
-                        Accounts
-                        <div class="pull-right">
-                            <span class="create-account label label-success">
-                                <span class="fa fa-plus"></span>
-                                New Account
-                            </span>
-                        </div>
-                    </li>
-                </ul>
+                
             </section>
         </aside>
         <div class="content-wrapper">
             <section class="content-header delete-account">
                 <h1 class="delete-account-header">
                     <span class="content-title">Account Name</span>
-                    <small class="content-description">Account</small>
                     <button class="btn btn-danger remove-account">
                         <span class="fa fa-trash"></span>
                         Delete Account

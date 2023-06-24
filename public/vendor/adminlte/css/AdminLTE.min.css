@@ -5097,3 +5097,16 @@ table.text-center th {
     margin-right: 0;
   }
   
+  .sidebar-wrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .log-out{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
