@@ -17,6 +17,12 @@
       "email": "test@test.test",
       "password": "test",
       "id": "xc34glkl6lm50p2"
+    },
+    {
+      "name": "icnoem",
+      "email": "utsavmehta192002@gmail.com",
+      "password": "x",
+      "id": "42mwlci1wvqlj9nlo55"
     }
   ],
   "accounts": [
@@ -49,6 +55,11 @@
       "name": "chase",
       "user_id": "xc34glkl6lm50p2",
       "id": "xc34lccl6lm59as"
+    },
+    {
+      "name": "utsav",
+      "user_id": "42mwlci1wvqlj9nlo55",
+      "id": "42mwlci227clj9nr18n"
     }
   ],
   "transactions": [
@@ -150,6 +161,15 @@
       "account_id": "xc34msol6llxn7i",
       "user_id": "xc34kj4l6lllsbe",
       "created_at": "2022-08-09T03:13:04.618Z"
+    },
+    {
+      "id": "42mwlci227clj9nrh3g",
+      "type": "income",
+      "name": "e",
+      "sum": 2,
+      "account_id": "42mwlci227clj9nr18n",
+      "user_id": "42mwlci1wvqlj9nlo55",
+      "created_at": "2023-06-24T07:06:59.020Z"
     }
   ]
 }
