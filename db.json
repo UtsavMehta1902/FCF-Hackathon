@@ -1,10 +1,10 @@
 {
   "users": [
     {
-      "name": "Anastasia",
-      "email": "anastasia@anastasia.com",
-      "password": "admin",
-      "id": "xc34i0cl6efej2b"
+      "name": "demo",
+      "email": "demo@demo",
+      "password": "demo",
+      "id": "1"
     },
     {
       "name": "a",
@@ -29,29 +29,35 @@
       "email": "asd@f",
       "password": "1",
       "id": "212nk68lj9pd4he"
+=======
+      "name": "if",
+      "email": "else@gmail.com",
+      "password": "if",
+      "id": "42mwlci8ctlj9prfx0"
     },
     {
       "name": "utsav",
       "email": "utsavmehta2002@yahoo.com",
       "password": "1",
-      "id": "42mwlcidkxlj9qzjk2"
+      "id": "42mwlcib4tlj9qefnr"
+>>>>>>> 7f76c02 (added accounts to home page.)
     }
   ],
   "accounts": [
     {
-      "name": "BofA",
-      "user_id": "xc34i0cl6efej2b",
-      "id": "xc3429cl6efewts"
+      "name": "Банк",
+      "user_id": "1",
+      "id": "1"
     },
     {
-      "name": "Chase",
-      "user_id": "xc34i0cl6efej2b",
-      "id": "xc344bwl6eff2su"
+      "name": "Магазин",
+      "user_id": "1",
+      "id": "2"
     },
     {
-      "name": "Cash",
-      "user_id": "xc34i0cl6efej2b",
-      "id": "xc34jx8l6effble"
+      "name": "Бизнес",
+      "user_id": "1",
+      "id": "3"
     },
     {
       "name": "vb",
@@ -74,201 +80,186 @@
       "id": "42mwlci227clj9nr18n"
     },
     {
+<<<<<<< HEAD
       "name": "account1",
       "user_id": "212nk68lj9pd4he",
       "id": "212nkuolj9pjdaj"
+=======
+      "name": "dfdf",
+      "user_id": "42mwlci8ctlj9prfx0",
+      "id": "42mwlci928lj9proio"
     },
     {
-      "name": "axis",
-      "user_id": "42mwlcidkxlj9qzjk2",
-      "id": "42mwlcidmelj9qzz90"
+      "name": "dfddfd",
+      "user_id": "42mwlci8ctlj9prfx0",
+      "id": "42mwlci93elj9prsf8"
+    },
+    {
+      "name": "sdsd",
+      "user_id": "42mwlci8ctlj9prfx0",
+      "id": "42mwlci93tlj9ptnu9"
+    },
+    {
+      "name": "df",
+      "user_id": "42mwlci8ctlj9prfx0",
+      "id": "42mwlciazclj9qbuvk"
     },
     {
       "name": "icici",
-      "user_id": "42mwlcidkxlj9qzjk2",
-      "id": "42mwlcidmvlj9r0czx"
+      "user_id": "42mwlcib4tlj9qefnr",
+      "id": "42mwlcibd3lj9qen5o"
+    },
+    {
+      "name": "axis",
+      "user_id": "42mwlcib4tlj9qefnr",
+      "id": "42mwlcibgqlj9qffer"
+>>>>>>> 7f76c02 (added accounts to home page.)
     }
   ],
   "transactions": [
     {
-      "id": "xc34ex8l6efilov",
+      "account_id": "1",
+      "created_at": "2019-09-15 10:24:02",
+      "id": "1",
+      "name": "Кредит",
+      "sum": 5000,
       "type": "expense",
-      "name": "Lose the lottery",
-      "sum": "120",
-      "account_id": "xc3429cl6efewts",
-      "user_id": "xc34i0cl6efej2b",
-      "created_at": "2023-06-24T07:00:15.795Z"
+      "user_id": "1"
     },
     {
-      "id": "xc34gu0l6efiuyn",
-      "type": "expense",
-      "name": "Dress",
+      "account_id": "1",
+      "created_at": "2019-09-17 15:53:02",
+      "id": "2",
+      "name": "Баланс на дебетовке",
+      "sum": 3200,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "1",
+      "created_at": "2019-09-19 20:12:02",
+      "id": "3",
+      "name": "Копилка",
+      "sum": 1500,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "2",
+      "created_at": "2019-09-26 16:23:02",
+      "id": "4",
+      "name": "Молочные продукты",
+      "sum": 100,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "2",
+      "created_at": "2019-09-25 15:03:02",
+      "id": "5",
+      "name": "Фрукты",
       "sum": 250,
-      "account_id": "xc3429cl6efewts",
-      "user_id": "xc34i0cl6efej2b",
-      "created_at": "2022-08-04T02:39:00.670Z"
+      "type": "income",
+      "user_id": "1"
     },
     {
-      "id": "xc34hkkl6efj3vw",
+      "account_id": "2",
+      "created_at": "2019-09-25 15:03:02",
+      "id": "17",
+      "name": "Овощи",
+      "sum": 300,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "2",
+      "created_at": "2019-09-26 14:47:02",
+      "id": "6",
+      "name": "Мясо",
+      "sum": 600,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "2",
+      "created_at": "2019-09-27 13:27:02",
+      "id": "7",
+      "name": "Долг в банк",
+      "sum": 5000,
       "type": "expense",
-      "name": "Guppy fish ",
-      "sum": 5,
-      "account_id": "xc3429cl6efewts",
-      "user_id": "xc34i0cl6efej2b",
-      "created_at": "2022-08-04T02:39:12.235Z"
+      "user_id": "1"
     },
     {
-      "id": "xc34hisl6efl5fd",
-      "type": "income",
-      "name": "Salary",
-      "sum": 5670,
-      "account_id": "xc344bwl6eff2su",
-      "user_id": "xc34i0cl6efej2b",
-      "created_at": "2022-08-04T02:40:47.544Z"
-    },
-    {
-      "id": "xc34568l6eflujg",
+      "account_id": "3",
+      "created_at": "2017-10-15 13:27:02",
+      "id": "9",
+      "name": "На банду",
+      "sum": 15000,
       "type": "expense",
-      "name": "Wine",
-      "sum": 15,
-      "account_id": "xc344bwl6eff2su",
-      "user_id": "xc34i0cl6efej2b",
-      "created_at": "2022-08-04T02:41:20.091Z"
+      "user_id": "1"
     },
     {
-      "id": "xc34338l6efm3ai",
+      "account_id": "3",
+      "created_at": "2017-09-17 13:27:02",
+      "id": "10",
+      "name": "На стволы",
+      "sum": 6000,
       "type": "expense",
-      "name": "Cheese",
-      "sum": 78,
-      "account_id": "xc3429cl6efewts",
-      "user_id": "xc34i0cl6efej2b",
-      "created_at": "2022-08-04T02:41:31.433Z"
+      "user_id": "1"
     },
     {
-      "id": "xc34ljsl6efqxgz",
+      "account_id": "3",
+      "created_at": "2017-12-27 13:27:02",
+      "id": "11",
+      "name": "Прибыль с банка",
+      "sum": 1500000,
       "type": "income",
-      "name": "Sold antique vase",
-      "sum": 987654,
-      "account_id": "xc34jx8l6effble",
-      "user_id": "xc34i0cl6efej2b",
-      "created_at": "2022-08-04T02:45:17.170Z"
+      "user_id": "1"
     },
     {
-      "id": "xc34lqcl6efsatm",
+      "account_id": "3",
+      "created_at": "2018-01-15 13:27:02",
+      "id": "12",
+      "name": "Прибыль с магазина",
+      "sum": 300000,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "3",
+      "created_at": "2018-01-15 13:27:02",
+      "id": "13",
+      "name": "Подарок сизого",
+      "sum": 20000,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "3",
+      "created_at": "2017-09-15 13:27:02",
+      "id": "14",
+      "name": "На охрану",
+      "sum": 60000,
       "type": "expense",
-      "name": "Bought antique lamp",
-      "sum": 87654,
-      "account_id": "xc34jx8l6effble",
-      "user_id": "xc34i0cl6efej2b",
-      "created_at": "2022-08-04T02:46:21.129Z"
+      "user_id": "1"
     },
     {
-      "id": "xc344v0l6lln48j",
-      "type": "income",
-      "name": "hg",
-      "sum": 5,
-      "account_id": "xc34cwsl6llmvi1",
-      "user_id": "xc34kj4l6lllsbe",
-      "created_at": "2022-08-09T03:04:40.242Z"
-    },
-    {
-      "id": "xc34klol6lluzm1",
+      "account_id": "3",
+      "created_at": "2017-10-15 13:27:02",
+      "id": "15",
+      "name": "На бумер",
+      "sum": 300000,
       "type": "expense",
-      "name": "h",
-      "sum": 6,
-      "account_id": "xc34cwsl6llmvi1",
-      "user_id": "xc34kj4l6lllsbe",
-      "created_at": "2022-08-09T03:10:47.496Z"
+      "user_id": "1"
     },
     {
-      "id": "xc3497gl6llxxez",
-      "type": "expense",
-      "name": "fc",
-      "sum": 6,
-      "account_id": "xc34msol6llxn7i",
-      "user_id": "xc34kj4l6lllsbe",
-      "created_at": "2022-08-09T03:13:04.618Z"
-    },
-    {
-      "id": "42mwlci227clj9nrh3g",
-      "type": "income",
-      "name": "e",
-      "sum": 2,
-      "account_id": "42mwlci227clj9nr18n",
-      "user_id": "42mwlci1wvqlj9nlo55",
-      "created_at": "2023-06-24T07:06:59.020Z"
-    },
-    {
-      "id": "42mwlci84slj9piwk5",
-      "type": "income",
-      "name": "bank",
-      "sum": 23,
-      "account_id": "42mwlci227clj9nr18n",
-      "user_id": "42mwlci1wvqlj9nlo55",
-      "created_at": "2023-06-24T07:56:18.388Z"
-    },
-    {
-      "id": "42mwlci98slj9q8fqr",
-      "type": "income",
-      "name": "bank",
-      "sum": 7,
-      "account_id": "42mwlci928lj9proio",
-      "user_id": "42mwlci8ctlj9prfx0",
-      "created_at": "2023-06-24T08:16:09.650Z"
-    },
-    {
-      "id": "42mwlcibdflj9qf8ze",
-      "type": "income",
-      "name": "pani",
-      "sum": 20,
-      "account_id": "42mwlcibd3lj9qen5o",
-      "user_id": "42mwlcib4tlj9qefnr",
-      "created_at": "2023-06-24T08:21:27.481Z"
-    },
-    {
-      "id": "42mwlcibgxlj9qfnwz",
+      "id": "212nq1flj9tm1nd",
       "type": "expense",
       "name": "pani",
       "sum": 20,
       "account_id": "42mwlcibgqlj9qffer",
       "user_id": "42mwlcib4tlj9qefnr",
       "created_at": "2023-06-24T08:21:46.834Z"
-    },
-    {
-      "id": "42mwlcidnolj9r1ysb",
-      "type": "income",
-      "name": "icnoem",
-      "sum": 20,
-      "account_id": "42mwlcidmelj9qzz90",
-      "user_id": "42mwlcidkxlj9qzjk2",
-      "created_at": "2023-06-24T08:39:07.354Z"
-    },
-    {
-      "id": "42mwlcidvplj9rs0dh",
-      "type": "expense",
-      "name": "utsav",
-      "sum": 7878,
-      "account_id": "42mwlcidmelj9qzz90",
-      "user_id": "42mwlcidkxlj9qzjk2",
-      "created_at": "2023-06-24T08:59:22.468Z"
-    },
-    {
-      "id": "42mwlciiaolj9rs65o",
-      "type": "expense",
-      "name": "utsav",
-      "sum": 67,
-      "account_id": "42mwlcidmelj9qzz90",
-      "user_id": "42mwlcidkxlj9qzjk2",
-      "created_at": "2023-06-24T08:59:29.963Z"
-    },
-    {
-      "id": "42mwlciiaxlj9rsh1i",
-      "type": "income",
-      "name": "uyy",
-      "sum": 8000,
-      "account_id": "42mwlcidmelj9qzz90",
-      "user_id": "42mwlcidkxlj9qzjk2",
-      "created_at": "2023-06-24T08:59:44.069Z"
     }
   ]
 }

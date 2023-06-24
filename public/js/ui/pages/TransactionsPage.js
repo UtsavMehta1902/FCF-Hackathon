@@ -35,12 +35,17 @@
      let self = this;
      const accountRemove = this.element.querySelector('.remove-account');
      const transactionRemove = this.element.querySelectorAll('.transaction__remove');
+     const transactionEdit = this.element.querySelectorAll('.transaction__edit');
+     
      accountRemove.onclick = function() {
        self.removeAccount();
      }
      for (let i = 0; i < transactionRemove.length; i++) {
        transactionRemove[i].onclick = function(event) {
          self.removeTransaction(event.currentTarget.dataset.id);
+       }
+       transactionEdit[i].onclick = function(event) {
+        self.editTransaction(event.currentTarget.dataset.id);
        }
      }
    }
@@ -88,6 +93,25 @@
      }
    }
  
+   editTransaction(id) {
+    // const question = confirm("Are you sure you want to delete this transaction?");
+    // if (question) {
+    //   Transaction.remove({id: id}, callback );
+    //   function callback(err, response) {
+    //     if (response) {
+    //       App.update();
+    //     }
+    //   }
+    // }
+
+    //open modal window
+    // App.getModal('editTransaction').setId(id);
+    App.getForm('editTransaction').setId(id);
+    App.getForm('editTransaction').renderAccountsList();
+    App.getModal('editTransaction').open();
+  
+
+  }
    /**
     * С помощью Account.get() получает название счёта и отображает
     * его через TransactionsPage.renderTitle.
@@ -198,7 +222,11 @@
            <button class="btn btn-danger transaction__remove" data-id="`+ item.id +`">
              <i class="fa fa-trash"></i>  
            </button>
+           <button class="btn btn-info transaction__edit" data-id="`+ item.id +`">
+             <i class="fa fa-edit"></i>  
+           </button>
          </div>
+         
        </div>`;
    }
  

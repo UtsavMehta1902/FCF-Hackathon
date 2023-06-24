@@ -257,6 +257,46 @@
     </div>
 
 
+    <div class="modal fade in" id="modal-edit-transaction" data-modal-id="editTransaction">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">Edit Transaction</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form" id="edit-transaction-form">
+                        <div class="form-group">
+                            <label for="transaction-type-list">Transaction Type</label>
+                            <select name="type" id="transaction-type-list" class="form-control" required>
+                                <option value="income">Income</option>
+                                <option value="expense">Expense</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Amount" name="sum" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="transaction-accounts-list">Account</label>
+                            <select name="account_id" id="transaction-accounts-list" class="form-control accounts-select" required></select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary" form="edit-transaction-form">Edit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script src="js/api/createRequest.js"></script>
     <script src="js/api/Entity.js"></script>
     <script src="js/api/Account.js"></script>
@@ -275,6 +315,7 @@
     <script src="js/ui/forms/RegisterForm.js"></script>
     <script src="js/ui/forms/CreateAccountForm.js"></script>
     <script src="js/ui/forms/CreateTransactionForm.js"></script>
+    <script src="js/ui/forms/EditTransactionForm.js"></script>
 
     <script src="js/ui/Sidebar.js"></script>
     <script src="js/App.js"></script>

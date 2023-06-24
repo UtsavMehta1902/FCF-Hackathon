@@ -54,6 +54,7 @@ class App {
       createAccount: new Modal(document.querySelector("#modal-new-account")),
       newIncome: new Modal(document.querySelector("#modal-new-income")),
       newExpense: new Modal(document.querySelector("#modal-new-expense")),
+      editTransaction: new Modal(document.querySelector("#modal-edit-transaction")),
     };
   }
 
@@ -86,6 +87,10 @@ class App {
       createExpense: new CreateTransactionForm(
         document.querySelector("#new-expense-form")
       ),
+      editTransaction: new EditTransactionForm(
+        document.querySelector("#edit-transaction-form")
+      ),
+
     };
   }
 
@@ -190,6 +195,8 @@ class App {
    * через getPage и вызывает у этой страницы
    * метод update()
    * */
+
+  
   static updatePages() {
     this.getPage("transactions").update();
   }
@@ -206,5 +213,6 @@ class App {
   static updateForms() {
     this.getForm("createIncome").renderAccountsList();
     this.getForm("createExpense").renderAccountsList();
+    this.getForm("editTransaction").renderAccountsList();
   }
 }
