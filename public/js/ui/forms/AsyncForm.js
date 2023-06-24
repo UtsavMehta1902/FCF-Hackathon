@@ -1,30 +1,29 @@
 /**
- * Класс AsyncForm управляет всеми формами
- * приложения, которые не должны быть отправлены с
- * перезагрузкой страницы. Вместо этого данные
- * с таких форм собираются и передаются в метод onSubmit
- * для последующей обработки
- * */
- class AsyncForm {
+ * The AsyncForm class manages all the application forms
+ * that should not be submitted with a page reload. Instead,
+ * the data from such forms is collected and passed to the onSubmit
+ * method for further processing.
+ */
+class AsyncForm {
   /**
-   * Если переданный элемент не существует,
-   * необходимо выкинуть ошибку.
-   * Сохраняет переданный элемент и регистрирует события
-   * через registerEvents()
-   * */
+   * If the provided element does not exist,
+   * an error should be thrown.
+   * Saves the provided element and registers events
+   * using registerEvents().
+   */
   constructor(element) {
     if (element) {
       this.element = element;
       this.registerEvents();
     } else {
-      throw new Error('No such an element');
+      throw new Error('No such element');
     }
   }
 
   /**
-   * Необходимо запретить отправку формы и в момент отправки
-   * вызывает метод submit()
-   * */
+   * Prevents form submission and calls the submit() method
+   * at the moment of submission.
+   */
   registerEvents() {
     this.element.addEventListener('submit', event => {
       event.preventDefault();
@@ -33,32 +32,36 @@
   }
 
   /**
-   * Преобразует данные формы в объект вида
+   * Converts the form data into an object of the form:
    * {
-   *  'название поля формы 1': 'значение поля формы 1',
-   *  'название поля формы 2': 'значение поля формы 2'
+   *   'form field 1 name': 'form field 1 value',
+   *   'form field 2 name': 'form field 2 value',
+   *   ...
    * }
-   * */
+   */
   getData() {
     const formData = new FormData(this.element);
     const entries = formData.entries();
     const data = {};
     for (let item of entries) {
-      const key = item[ 0 ];
-      const value = item[ 1 ];
+      const key = item[0];
+      const value = item[1];
       data[key] = value;
     }
     return data;
   }
 
-  onSubmit(options){
-
-  }
+  /**
+   * Placeholder method to be overridden in the subclass.
+   * Called when the form is submitted and receives the data
+   * obtained from the getData() method.
+   */
+  onSubmit(options) {}
 
   /**
-   * Вызывает метод onSubmit и передаёт туда
-   * данные, полученные из метода getData()
-   * */
+   * Calls the onSubmit method and passes the data obtained
+   * from the getData() method.
+   */
   submit() {
     let data = this.getData();
     this.onSubmit(data);
