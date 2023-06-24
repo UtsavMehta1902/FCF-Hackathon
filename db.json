@@ -54,12 +54,12 @@
   "transactions": [
     {
       "id": "xc34ex8l6efilov",
-      "type": "income",
-      "name": "Won the lottery",
-      "sum": 1234567,
+      "type": "expense",
+      "name": "Lose the lottery",
+      "sum": "120",
       "account_id": "xc3429cl6efewts",
       "user_id": "xc34i0cl6efej2b",
-      "created_at": "2022-08-04T02:38:48.654Z"
+      "created_at": "2023-06-24T07:00:15.795Z"
     },
     {
       "id": "xc34gu0l6efiuyn",

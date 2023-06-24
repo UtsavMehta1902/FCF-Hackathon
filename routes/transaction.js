@@ -61,4 +61,35 @@ router.put("/", upload.none(), function(request, response) {
     }
 });
 
+router.put("/edit", upload.none(), function(request, response) {
+    const db = low(new FileSync('db.json'));// получение БД
+    let transactions = db.get("transactions");// получение всех транзакций
+    const reg =  /^\-?\d+(\.?\d+)?$/;
+    console.log('request', request.body)
+    const { id, type, name, sum, account_id } = request.body;// получение значений из тела запроса
+    
+    const currentUser = db.get("users").find({id: request.session.id}).value();
+    if(!currentUser)// если текущего авторизованного пользователя нету
+        //отправление ответа с ошибкой о необходимости авторизации
+        response.json({ success: false, error: "Not authorized" }).status(401);
+    else{// если авторизованный пользователь существует
+        if (reg.test(sum)) {
+            const transaction = transactions.find({id});
+            if(transaction.value()){
+                console.log('transaction', transaction.value())
+                transaction.assign({
+                    type: type.toLowerCase(),
+                    name,
+                    sum,
+                    account_id,
+                    created_at: new Date().toISOString()
+                }).write();
+                response.json({success: true});// отправление ответа с успешностью
+            }else{  
+                response.json({ success: false, error: "Transaction not found" });
+            }
+        }
+    }
+});
+
 module.exports = router;
