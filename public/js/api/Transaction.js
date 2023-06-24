@@ -1,8 +1,8 @@
-/**
- * Класс Transaction наследуется от Entity.
- * Управляет счетами пользователя.
- * Имеет свойство URL со значением '/transaction'
- * */
+/*
+    The Transaction class inherits from Entity.
+    Manages user transactions.
+    Has a URL property with the value '/transaction'.
+*/
 class Transaction extends Entity {
 static URL = '/transaction';
 static edit(data, callback) {

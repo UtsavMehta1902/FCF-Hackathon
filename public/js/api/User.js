@@ -1,29 +1,25 @@
-/**
- * Класс User управляет авторизацией, выходом и
- * регистрацией пользователя из приложения
- * Имеет свойство URL, равное '/user'.
- * */
+/*
+  The User class manages user authentication, logout, and registration within the application.
+  It has a URL property that is initialized with the value '/user'.
+*/
 class User {
-  /**
-   * Устанавливает текущего пользователя в
-   * локальном хранилище.
-   * */
+  /*
+    Sets the current user in the local storage.
+  */
   static URL = "/user";
 
   static setCurrent(user) {
     localStorage.user = JSON.stringify(user);
   }
-  /**
-   * Удаляет информацию об авторизованном
-   * пользователе из локального хранилища.
-   * */
+  /*
+    Removes information about the authenticated user from the local storage.
+  */
   static unsetCurrent() {
     delete localStorage.user;
   }
-  /**
-   * Возвращает текущего авторизованного пользователя
-   * из локального хранилища
-   * */
+  /*
+    Returns the current authenticated user from the local storage.
+  */
   static current() {
 
     if (!localStorage.user) {
@@ -33,10 +29,9 @@ class User {
       return JSON.parse(localStorage.user);
     }
   }
-  /**
-   * Получает информацию о текущем
-   * авторизованном пользователе.
-  /** */
+  /*
+    Retrieves information about the current authenticated user.
+  */
 
   static fetch(callback ) {
 
@@ -56,12 +51,10 @@ class User {
     return createRequest(options);
 }
 
-  /**
-   * Производит попытку авторизации.
-   * После успешной авторизации необходимо
-   * сохранить пользователя через метод
-   * User.setCurrent.
-   * */
+  /*
+    Attempts to authenticate the user.
+    After successful authentication, the user should be saved using the User.setCurrent method.
+  */
    static login(data, callback) {
     createRequest({
       url: this.URL + '/login',
@@ -80,12 +73,10 @@ class User {
     });
   }
   
-  /**
-   * Производит попытку регистрации пользователя.
-   * После успешной авторизации необходимо
-   * сохранить пользователя через метод
-   * User.setCurrent.
-   * */
+  /*
+    Attempts to register a user.
+    After successful registration, the user should be saved using the User.setCurrent method.
+  */
    static register(data, callback) {
     createRequest({
       url: this.URL + '/register',
@@ -97,18 +88,15 @@ class User {
           this.setCurrent(response.user);
           callback(err, response);
         } else {
-          // console.log(err);
-          // alert('User qlready exists')
           Swal.fire('User already exists');
         }
       }
     }); 
   }
 
-  /**
-   * Производит выход из приложения. После успешного
-   * выхода необходимо вызвать метод User.unsetCurrent
-   * */
+  /*
+    Logs out of the application. After successful logout, the User.unsetCurrent method should be called.
+  */
   static logout(data, callback) {
     createRequest({
       url: this.URL + '/logout',
@@ -118,7 +106,6 @@ class User {
       callback: (err, response) => {
         if (response && response.success) {
           User.unsetCurrent();
-          // console.log("Exit");
           Swal.fire('See you later!');
 
         }

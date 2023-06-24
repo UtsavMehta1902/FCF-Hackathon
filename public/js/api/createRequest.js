@@ -1,3 +1,7 @@
+/*
+	Function to create a XMLHttpRequest object and send a request to the server.
+*/
+
 const createRequest = (options = {}) => {
 
 	const xhr = new XMLHttpRequest();
