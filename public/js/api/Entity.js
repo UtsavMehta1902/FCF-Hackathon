@@ -1,7 +1,7 @@
-/**
- * Класс Entity - базовый для взаимодействия с сервером.
- * Имеет свойство URL, равно пустой строке.
- * */
+/*
+The Entity class is a base class for server interactions.
+It has a URL property that is initialized with an empty string.
+*/
  class Entity {
   static URL = '';
   /**
@@ -18,11 +18,11 @@
       });
   }
 
-  /**
-   * Создаёт счёт или доход/расход с помощью запроса
-   * на сервер. (в зависимости от того,
-   * что наследуется от Entity)
-   * */
+  /*
+    Requests a list of data from the server.
+    It can be accounts or incomes/expenses
+    (depending on what is inherited from Entity).
+  */
   static create(data, callback) {
     createRequest({
       url: this.URL,
@@ -32,10 +32,10 @@
     });
   }
 
-  /**
-   * Удаляет информацию о счёте или доходе/расходе
-   * (в зависимости от того, что наследуется от Entity)
-   * */
+  /*
+    Deletes information about an account or income/expense
+    (depending on what is inherited from Entity).
+  */
   static remove(data, callback ) {
     createRequest({
       url: this.URL,
